@@ -221,7 +221,7 @@ class jpk_v7m:
         self._subject_xml_gen = self._subject_xml_gen_legal_person
 
     def begin(self):
-        self.file = open(self.file_name, "tw")
+        self.file = open(self.file_name, "tw", encoding="UTF-8")
 
     def end(self):
         self.file.writelines(self.content_gen())
